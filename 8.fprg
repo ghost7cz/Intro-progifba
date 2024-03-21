@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 08:26:20 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTE5OyIwODoxMzo1OSAiOzI5MTA="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTE5OyIwODoyNjoyMCAiOzE7MzAxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, r, n, i, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite o valor inicial&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;digite a raz&#227;o&quot;" newline="True"/>
+            <input variable="r"/>
+            <output expression="&quot;digite a quantidade&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="resultado" expression="a*r^(i-1)"/>
+                <output expression="resultado" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;resultado final e&quot;&amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

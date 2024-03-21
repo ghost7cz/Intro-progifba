@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 07:49:03 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTIwOyIwNzoyODowNCAiOzI4OTc="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTIwOyIwNzo0OTowMyAiOzE7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, a, b, c, d" type="Real" array="False" size=""/>
+            <assign variable="a" expression="sqrt(abs(4-6))"/>
+            <assign variable="b" expression="(10/(4^3-3))"/>
+            <assign variable="c" expression="ln(b)-pi"/>
+            <assign variable="d" expression="arctan(c)"/>
+            <assign variable="x" expression="a/d"/>
+            <output expression="x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

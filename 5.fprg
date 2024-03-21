@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 08:56:47 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwODo0MjowNCAiOzI4OTM="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwODo1Njo0NyAiOzE7MzAxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horaInicial, minutoInicial, horaFinal, minutoFinal, horaTotal" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite a Hora Inicial&quot;" newline="True"/>
+            <input variable="horaInicial"/>
+            <output expression="&quot;digite o minuto Inicial&quot;" newline="True"/>
+            <input variable="minutoInicial"/>
+            <output expression="&quot;digite a Hora final&quot;" newline="True"/>
+            <input variable="horaFinal"/>
+            <output expression="&quot;digite a minuto final&quot;" newline="True"/>
+            <input variable="minutoFinal"/>
+            <assign variable="horaTotal" expression="(horaFinal - horaInicial) * 60 + (minutoFinal - minutoInicial)"/>
+            <output expression="&quot;O Tempo decorrido e de&quot; &amp; horaTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

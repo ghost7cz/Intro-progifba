@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 08:03:45 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTE5OyIwNzo1MToxNyAiOzI5MDU="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTE5OyIwODowMzo0NSAiOzE7MzAxMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicial, final, total, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite o numero inicial&quot;" newline="True"/>
+            <input variable="inicial"/>
+            <output expression="&quot;digite o numero final&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="i" expression="inicial"/>
+            <assign variable="total" expression="0"/>
+            <while expression="i&lt;=final">
+                <assign variable="total" expression="total+i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

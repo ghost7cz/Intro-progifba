@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 08:24:18 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwODoxMjozNCAiOzI4OTM="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwODoyNDoxOCAiOzE7MzAwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ca, co, hipotenusa" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite o cateto 1&quot;" newline="True"/>
+            <input variable="ca"/>
+            <output expression="&quot;digite o cateto 2&quot;" newline="True"/>
+            <input variable="co"/>
+            <assign variable="hipotenusa" expression="sqrt(ca^2+co^2)"/>
+            <output expression="&quot;A hipotenusa e&quot;&amp; hipotenusa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

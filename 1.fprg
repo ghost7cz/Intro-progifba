@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 08:42:23 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTE5OyIwODoyNjo0MCAiOzI5MDQ="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTE5OyIwODo0MjoyMyAiOzE7MzAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, x" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="4*5"/>
+            <assign variable="b" expression="4* sqrt(1+2)"/>
+            <assign variable="c" expression="2^2-2"/>
+            <assign variable="d" expression="(c*3)+1"/>
+            <assign variable="x" expression="a-(b/d)"/>
+            <output expression="x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

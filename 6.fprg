@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 09:55:47 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwOTowMDoyMiAiOzI4ODg="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwOTo1NTo0NyAiOzE7MzAxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pre&#231;o, pagamento, pre&#231;oFinal, desconto, juros" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o pre&#231;o&quot;" newline="True"/>
+            <input variable="pre&#231;o"/>
+            <output expression="&quot;digite a condi&#231;&#227;o de pagamento&quot;" newline="True"/>
+            <input variable="pagamento"/>
+            <if expression="pagamento == 1">
+                <then>
+                    <assign variable="desconto" expression="pre&#231;o * 0.15"/>
+                    <output expression="&quot;&#192; vista no cart&#227;o de cr&#233;dito, recebe e de  &quot;" newline="False"/>
+                </then>
+                <else>
+                    <if expression="pagamento == 2">
+                        <then>
+                            <assign variable="desconto" expression="pre&#231;o * 0.10"/>
+                            <output expression="&quot;&#192; vista em dinheiro ou cheque, recebe e de  &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pagamento == 0">
+                                <then>
+                                    <assign variable="pre&#231;oFinal" expression="pre&#231;o"/>
+                                    <assign variable="pre&#231;oFinal" expression="pre&#231;oFinal/2"/>
+                                    <output expression="&quot;Em duas vezes, pre&#231;o normal de etiqueta sem juros&quot; &amp; pre&#231;oFinal" newline="True"/>
+                                    <breakpoint expression="" always="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pagamento ==3">
+                                        <then>
+                                            <assign variable="desconto" expression="0"/>
+                                            <assign variable="juros" expression="pre&#231;o*0.1"/>
+                                            <assign variable="pre&#231;oFinal" expression="pre&#231;o+juros"/>
+                                            <assign variable="pre&#231;oFinal" expression="pre&#231;oFinal/2"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                    <output expression="&quot;sera duas vezes de &quot; &amp; pre&#231;oFinal" newline="True"/>
+                                    <breakpoint expression="" always="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="pre&#231;oFinal" expression="pre&#231;o-desconto"/>
+            <output expression="pre&#231;oFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

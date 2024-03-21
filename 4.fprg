@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Caique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-10 08:41:56 "/>
+        <attribute name="created" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwODoyNDozNCAiOzI4OTY="/>
+        <attribute name="edited" value="Q2FpcXVlO0RFU0tUT1AtT1FDUlA2UjsyMDI0LTAzLTEwOyIwODo0MTo1NiAiOzE7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cx, cy, px, py, distancia" type="Integer" array="False" size=""/>
+            <output expression="&quot;cordenada de x&quot;" newline="True"/>
+            <input variable="cx"/>
+            <output expression="&quot;cordenada de y&quot;" newline="True"/>
+            <input variable="cy"/>
+            <output expression="&quot;ponto de x&quot;" newline="True"/>
+            <input variable="px"/>
+            <output expression="&quot;ponto de y&quot;" newline="True"/>
+            <input variable="py"/>
+            <assign variable="distancia" expression="sqrt((cx-cy)^2 + (px-py)^2)"/>
+            <output expression="&quot;A distancia entre eles e de &quot;&amp; distancia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
